@@ -1,100 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Parikshit Chaudhari | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parikshit Chaudhari | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6fb;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1769ff, #087cf5);
+            color: white;
+            padding: 20px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav h3 {
+            font-size: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 35px 10px 45px;
+        }
+
+        .profile {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            background: white;
+        }
+
+        .hero h1 {
+            margin-top: 10px;
+            font-size: 30px;
+        }
+
+        .hero p {
+            font-size: 15px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background: white;
+            padding: 22px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+            scroll-margin-top: 20px;
+        }
+
+        section h2 {
+            color: #1769ff;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skills span {
+            background: #3980f5;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+        }
+
+        .project {
+            border-left: 3px solid #3980f5;
+            padding: 8px 12px;
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            font-size: 16px;
+        }
+
+        .project p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .contact a {
+            color: #1769ff;
+            text-decoration: none;
+        }
+
+        .contact p {
+            margin-bottom: 5px;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 18px;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 0 6px;
+            }
+
+            .hero h1 {
+                font-size: 25px;
+            }
+
+            main {
+                padding: 0 12px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<nav>
-    <h2>Parikshit Chaudhari</h2>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-
 <header>
-    <img src="Profile.jpg" alt="Profile" class="profile">
-    <h1>Parikshit Chaudhari</h1>
-    <p>Integrated MCA Student | Python Developer</p>
+    <nav>
+        <h3>Parikshit Chaudhari</h3>
+
+        <div>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <img
+            class="profile"
+            src="profile.jpg"
+            alt="Parikshit Chaudhari Profile Photo"
+        >
+
+        <h1>Parikshit Chaudhari</h1>
+        <p>Integrated MCA Student | Aspiring Web Developer</p>
+    </div>
 </header>
 
-<section id="about">
-<h2>About Me</h2>
-<p>
-Hello! I'm <b>Parikshit Chaudhari</b>, an Integrated MCA student
-interested in Python programming and Web Development.
-I enjoy developing projects and learning new technologies.
-</p>
-</section>
+<main>
 
-<section id="skills">
-<h2>Skills</h2>
-<div class="skills">
-<span>Python</span>
-<span>HTML</span>
-<span>CSS</span>
-<span>JavaScript</span>
-<span>Git</span>
-<span>GitHub</span>
-<span>Tkinter</span>
-</div>
-</section>
+    <section id="about">
+        <h2>About Me</h2>
 
-<section id="projects">
-<h2>Projects</h2>
+        <p>
+            Hi, I'm Parikshit Chaudhari, an Integrated MCA student
+            interested in Python programming and Web Development.
+            I enjoy building useful applications and learning new
+            technologies to improve my technical skills.
+        </p>
+    </section>
 
-<div class="card">
-<h3>Language Translator</h3>
-<p>
-A Python application developed using Tkinter and Google Translate API
-to translate text between different languages.
-</p>
-</div>
+    <section id="skills">
+        <h2>Skills</h2>
 
-<div class="card">
-<h3>Personal Portfolio Website</h3>
-<p>
-A personal portfolio website to showcase my skills, projects and contact information.
-</p>
-</div>
+        <div class="skills">
+            <span>Python</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Git</span>
+            <span>GitHub</span>
+        </div>
+    </section>
 
-</section>
+    <section id="projects">
+        <h2>Projects</h2>
 
-<section id="contact">
-<h2>Contact Me</h2>
+        <div class="project">
+            <h3>Language Translator</h3>
 
-<p><b>Email:</b>
-<a href="mailto:YOUR_GMAIL">YOUR_GMAIL</a>
-</p>
+            <p>
+                A Python-based desktop application developed using
+                Tkinter and Google Translate API to translate text
+                between different languages.
+            </p>
 
-<p><b>Phone:</b> YOUR_PHONE_NUMBER</p>
+            <p><strong>Technologies:</strong> Python, Tkinter, Googletrans</p>
+        </div>
 
-<p><b>GitHub:</b><br>
-<a href="https://github.com/parikshit3104" target="_blank">
-github.com/parikshit3104
-</a>
-</p>
+        <div class="project">
+            <h3>Personal Portfolio Website</h3>
 
-<p><b>LinkedIn:</b><br>
-<a href="https://www.linkedin.com/in/parikshit-chaudhari-2945173a9" target="_blank">
-My LinkedIn Profile
-</a>
-</p>
+            <p>
+                A personal portfolio website showcasing my profile,
+                technical skills, projects, and contact information.
+            </p>
 
-</section>
+            <p><strong>Technologies:</strong> HTML, CSS</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+
+        <p>
+            <strong>Email:</strong>
+            <a href="mailto:YOUR_EMAIL@gmail.com">
+                YOUR_EMAIL@gmail.com
+            </a>
+        </p>
+
+        <p>
+            <strong>GitHub:</strong>
+            <a href="https://github.com/parikshit3104" target="_blank">
+                github.com/parikshit3104
+            </a>
+        </p>
+
+        <p>
+            <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/parikshit-chaudhari-2945173a9"
+               target="_blank">
+                View My LinkedIn Profile
+            </a>
+        </p>
+    </section>
+
+</main>
 
 <footer>
-<p>© 2026 Parikshit Chaudhari | All Rights Reserved</p>
+    <p>© 2026 Parikshit Chaudhari | Personal Portfolio</p>
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
